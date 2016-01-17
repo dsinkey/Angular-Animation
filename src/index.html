@@ -4,23 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Angular Animation</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="bower_components/bootstap/dist/css/bootstrap.css">
 </head>
-
 <body ng-app="myApp">
+
 <div ng-controller="NgAnimateCtrl">
-    <input ng-model="inputText"/>
-    <button ng-click="addItem()">Add</button>
+    <input ng-model="inputText" />
+    <button ng-click="addItem()">add</button>
 
-    <div>
-        
-    </div class="item" ng-repeat="item in itmes | active">
-    <input type="checlbox" ng-model="item.complete"/>&nbsp;
-    <span ng-bind="item.text"></span>
+    <div class="item" ng-repeat="item in items | active">
+
+        <input type="checkbox" ng-model="item.completed" />&nbsp;
+        <span ng-bind="item.text"></span>
     </div>
-</div>
 
+</div>
 
 <!--(if target dev)><!-->
 <script src="bower_components/jquery/jquery.js"></script>
