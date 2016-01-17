@@ -10,6 +10,14 @@
 
 <body ng-app="myApp">
 <div ng-controller="NgAnimateCtrl">
+    <input ng-model="inputText"/>
+    <button ng-click="addItem()">Add</button>
+
+    <div>
+        
+    </div class="item" ng-repeat="item in itmes | active">
+    <input type="checlbox" ng-model="item.complete"/>&nbsp;
+    <span ng-bind="item.text"></span>
     </div>
 </div>
 
