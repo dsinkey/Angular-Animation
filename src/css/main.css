@@ -3,35 +3,31 @@ body {
     font-family: sans-serif;
 }
 
-.gridStyle {
-    border: 1px solid #999;
-    max-width: 500px;
-    height: 600px;
+.item {
+    width: 230px;
+    padding: 10px;
+    margin: 10px 0;
+    background: #ddd;
+    box-shadow: 5px 5px 5px #888888;
+    font-weight: bold;
 }
 
-.detail {
-    max-width: 500px;
-    margin-left: 5px;
+.item.ng-enter {
+    -webkit-transition: 1.2s linear all;
+    transition: 1.2s linear all;
+    opacity: 0;
 }
 
-h1 {
-    margin-left: 5px;
+.item.ng-enter.ng-enter-active {
+    opacity: 1;
 }
 
-p {
-    margin-left: 5px;
+.item.ng-leave {
+    -webkit-transition: 1.2s linear all;
+    transition: 1.2s linear all;
+    opacity: 1;
 }
 
-label {
-    vertical-align: middle;
-    width: 100%;
-    margin-left: 5px;
+.item.ng-leave.ng-leave-active {
+    opacity: 0;
 }
-
-textarea {
-    vertical-align: middle;
-    width: 95%;
-    margin-left: 5px;
-}
-
-
