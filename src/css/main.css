@@ -14,8 +14,8 @@ body {
 }
 
 .item.ng-enter {
-    -webkit-transition: left 1s ease 1s, top 1s ease, opacity 2s linear;
-    transition: left 1s ease 1s, top 1s ease, opacity 2s linear;
+    -webkit-transition: left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s, top 1s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 2s linear;
+    transition: left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s, top 1s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 2s linear;
     opacity: 0;
     left: 300px;
     top: -500px;
@@ -28,8 +28,8 @@ body {
 }
 
 .item.ng-leave {
-    -webkit-transition: left 1s ease, top 1s ease 1s, opacity 2s linear;
-    transition: left 1s ease, top 1s ease 1s, opacity 2s linear;
+    -webkit-transition: left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55), top 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s, opacity 2s linear;
+    transition: left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55), top 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s, opacity 2s linear;
     top:0;
     left:0;
     opacity: 1;
